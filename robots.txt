@@ -1,0 +1,3 @@
+user-agent: *
+Allow: /
+Sitemap: https://georgiandefenceacademy.in/sitemap.xml

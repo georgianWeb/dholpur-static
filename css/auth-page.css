@@ -1,0 +1,260 @@
+@font-face {
+    font-family:"Ubuntu-Regular";
+	src: url("../assets/fonts/Ubuntu-Regular.ttf") format("truetype"),
+	url("../assets/fonts/Ubuntu-Regular.woff") format("woff"),
+	url("../assets/fonts/Ubuntu-Regular.woff2") format("woff2");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: "Ubuntu-Bold";
+	src: url("../assets/fonts/Ubuntu-Bold.ttf") format("truetype"),
+	url("../assets/fonts/Ubuntu-Bold.woff") format("woff"),
+	url("../assets/fonts/Ubuntu-Bold.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 700;
+}
+
+/*-------------*/
+.auth_form form {
+    font-family: 'Ubuntu-Bold',sans-serif;    
+}
+
+.auth_form-box {
+    opacity: 0;
+    position: relative;
+    top: 40px;
+    transition: 0.5s ease-in-out;
+}
+
+.loaded  .auth_form-box {
+    opacity: 1;
+    top: 0;
+}
+
+.auth_form form * {
+font-family: inherit;
+}
+
+.main.auth-main {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.auth_form-wrap {
+    padding-top: 50px;
+    padding-bottom: 90px;
+    width: 390px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.auth_form-wrap .form_headr {
+    padding-bottom: 30px;
+}
+
+.auth_form h3.form-title {
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.auth_form  form .input-wrap .hs-input {
+    line-height: 1.2;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    background: 0 0;
+    height: 62px;
+    padding: 0 20px 0 38px;
+    background-color: #e6e6e6;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    transition: border 0.2s ease,background 0.2s ease;
+}
+
+.auth_form  form .input-wrap .hs-input:focus {
+    border-color: #007bff;
+    background: #fff;
+}
+
+ul.radiobox-container,
+ul.checkbox-container {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+ul.radiobox-container li > input,
+ul.checkbox-container li > input {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+ul.checkbox-container li {
+    position: relative;
+}
+
+ul.radiobox-container li > label.label-radio,
+ul.checkbox-container li > label.label-checkbox {
+    font-family: 'Ubuntu-Regular',sans-serif;
+    font-size: 16px;
+    color: #999;
+    line-height: 1.2;
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+ul.checkbox-container li > label.label-checkbox:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    font-size: 13px;
+    color: transparent;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    background: #fff;
+    border: 2px solid #007bff;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    box-sizing: border-box;
+}
+
+ul.checkbox-container li > input:checked + label:before {
+    color: #fff;
+    background: #007bff;
+    border-color: #007bff;
+}
+
+.rdirct_link{
+    text-align: right;
+}
+
+.auth_form form .rdirct_link * {
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.auth_form .form-button {
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+    line-height: 1.2;
+    text-transform: uppercase;
+    height: 45px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0;
+    color: #fff;
+}
+
+.auth_form-box .field-group {
+    margin-bottom: 18px;
+}
+
+ul.radiobox-container > li, ul.checkbox-container > li {
+    position: relative;
+}
+
+.auth_form-box .hs-input,.auth_form-box .input-wrap {
+    margin-bottom: 0;
+}
+
+.auth_form .actions {
+    margin-top: 30px;
+}
+
+ul.input-error-message {
+    padding: 0 0 0 10px;
+    margin: 10px 0;
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: 'Ubuntu-Regular',sans-serif;
+    display: none;
+}
+
+label.error-label {
+    color: red;
+}
+
+.auth_form form .input-wrap .hs-input.error-input {
+    border-color: red;
+}
+
+.infot-ext {
+    font-size: 17px;
+    margin-bottom: 0;
+    font-weight: 400;
+}   
+
+.blank-error ul.input-error-message {
+    display: block;
+}
+
+ul.radiobox-container li > label.label-radio:before {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    border: 2px solid #007bff;
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translate(-0, -50%);
+    margin-top: -1px;
+}
+
+ul.radiobox-container > li + li, ul.checkbox-container > li + li {
+    margin-top: 10px;
+}
+
+ul.radiobox-container li > input[type="radio"]:checked + label.label-radio:before {
+    background: #007bff;
+}
